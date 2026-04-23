@@ -10,10 +10,14 @@ function subtrair ($a, $b){
     return $a - $b;
 }
 
-function dividir ($a, $b){
+function divisao ($a, $b){
     return $a/$b;
 }
 
-echo "resultado: ", dividir (50, 10);
+function multiplicacao ($a, $b){
+    return $a * $b;
+}
+
+echo "resultado: ", multiplicacao (5, 10);
 
 ?>
