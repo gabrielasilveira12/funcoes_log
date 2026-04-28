@@ -43,11 +43,26 @@ namespace logica; {
             return "voce não cumpre os requisitos.";
         } 
     }
-    
 
+namespace conversao;
+    function conversaodolar ($dolar, $real){
+        return $dolar / $real;
+    }
 
+    function conversaoeuro ($euro, $real){
+        return $euro / $real;
+    }
 
+    function conversaopeso ($peso, $real){
+        return $peso / $real;
+    }
 
+    function conversaolibra ($libra, $real){
+        return $libra / $real;
+    }
 
+    function conversaoiene ($iene, $real){
+        return $iene / $real;
+    }
 
-
+?>
