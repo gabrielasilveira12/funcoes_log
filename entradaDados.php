@@ -1,16 +1,15 @@
 <?php 
 
-require_once "biblioteca.php";
+require_once "bibliotecaFuncoes.php";
 
-//namespaceconversao:
-use function conversao\conversaodolar;
-use function conversao\conversaoeuro;
-use function conversao\conversaopeso;
-use function conversao\conversaolibra;
-use function conversao\conversaoiene;
+use function geometria\areaQuadrado;
+use function geometria\areaRetangulo;
+use function geometria\areaTriangulo;
+use function geometria\areaCirculo;
+use function geometria\areaTrapezio;
 
-echo "valor do dolar: ", conversaodolar (100, 5), "\n";
-echo "valor do euro: ", conversaoeuro (100, 5.85), "\n";
-echo "valor do peso: ", conversaopeso (100, 0.0035), "\n";
-echo "valor da libra: ", conversaolibra (100, 6.74), "\n";
-echo "valor do iene: ", conversaoiene (100, 0.031), "\n"; 
+echo "area do quadrado: ", areaQuadrado(3), "\n";
+echo "area do retangulo: ", areaRetangulo(3, 4), "\n";
+echo "area do triangulo: ", areaTriangulo(12, 10), "\n";
+echo "area do circulo: ", areaCirculo(5), "\n";
+echo "area do trapezio: ", areaTrapezio(1, 12, 03), "\n";

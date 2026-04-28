@@ -1,24 +1,29 @@
 <?php
 
-namespace conversao;
-    function conversaodolar ($real, $dolar){
-        return $real * $dolar;
+namespace geometria;{
+    function areaQuadrado ($lado)
+    {
+        return $lado * $lado;
     }
 
-    function conversaoeuro ($real, $euro){
-        return $real * $euro;
+    function areaRetangulo ($base, $altura)
+    {
+        return $base * $altura;
     }
 
-    function conversaopeso ($real, $peso){
-        return $real * $peso;
+    function areaTriangulo ($base, $altura)
+    {
+        return $base * $altura / 2;
     }
 
-    function conversaolibra ($real, $libra){
-        return $real * $libra;
+    function areaCirculo ($raio)
+    {
+        return $raio * $raio;
     }
 
-    function conversaoiene ($real, $iene){
-        return $real * $iene;
+    function areaTrapezio ($baseMaior, $baseMenor, $altura)
+    {
+        return ($baseMaior + $baseMenor) * $altura/2;
     }
 
-?>
+}
