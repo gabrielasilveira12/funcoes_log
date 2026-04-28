@@ -1,24 +1,24 @@
 <?php
 
-namespace saude {
-    function calcularImc ($peso, $altura){
-        return $peso / $altura * $altura;
+namespace conversao;
+    function conversaodolar ($dolar, $cotadolar){
+        return $dolar * $cotadolar;
     }
 
-    function valorIdealAgua ($peso){
-        return $peso * 35;
-    }
-     
-    function frequenciaCardiacaMaxima ($idade){
-        return 220 - $idade;
+    function conversaoeuro ($euro, $cotaeuro){
+        return $euro * $cotaeuro;
     }
 
-    function converterLibrasParaQuilo($libras){
-        return $libras * 0.4536;
+    function conversaopeso ($peso, $cotapeso){
+        return $peso * $cotapeso;
     }
 
-    function calcularCaloriasBasais($peso, $idade, $altura){
-        return  655 + (9.6 * $peso) + (1.8 * $altura) - (4.7 * $idade);
+    function conversaolibra ($libra, $cotalibras){
+        return $libra * $cotalibras;
     }
 
-}
+    function conversaoiene ($iene, $cotaiene){
+        return $iene * $cotaiene;
+    }
+
+?>
