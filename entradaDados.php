@@ -2,14 +2,14 @@
 
 require_once "bibliotecaFuncoes.php";
 
-use function geometria\areaQuadrado;
-use function geometria\areaRetangulo;
-use function geometria\areaTriangulo;
-use function geometria\areaCirculo;
-use function geometria\areaTrapezio;
+use function saude\calcularImc;
+use function saude\valorIdealAgua;
+use function saude\frequenciaCardiacaMaxima;
+use function saude\converterLibrasParaQuilo;
+use function saude\calcularCaloriasBasais;
 
-echo "area do quadrado: ", areaQuadrado(3), "\n";
-echo "area do retangulo: ", areaRetangulo(3, 4), "\n";
-echo "area do triangulo: ", areaTriangulo(12, 10), "\n";
-echo "area do circulo: ", areaCirculo(5), "\n";
-echo "area do trapezio: ", areaTrapezio(1, 12, 03), "\n";
+echo "IMC: ", calcularImc(50, 149), "\n";
+echo "valor de agua: ", valorIdealAgua(56), "\n";
+echo "frequencia cardiaca: ", frequenciaCardiacaMaxima(16), "\n";
+echo "libras para quilo: ", converterLibrasParaQuilo (30), "\n";
+echo "calorias basais: ", calcularCaloriasBasais (70, 12, 167), "\n";
